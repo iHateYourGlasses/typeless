@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-  - 4
+- 4
 before_script:
-  - npm prune
+- npm prune
 script:
-  - npm test
+- npm test
 deploy:
   provider: npm
   on:
@@ -12,7 +12,6 @@ deploy:
     tags: true
     node: 4
   skip_cleanup: true
-  email: "vinh@wikiwi.io"
+  email: vinh@wikiwi.io
   api_key:
-    secure: N+XvZo/9opcjIqpvEpF2mB4UAIC955+c97/+heqBWXQyNYffv8ajXgKbAgr075hpal+puknrcOfccxmjV2/aG7A8utep9jVjMXcitmWi+GEVF50FReX3eGRhbVpcDD7CdRpw8KP+05Wyz5IID+nhm65AUEeCb9mWXbBIhanDVep48npqG9xT/62l/BkWFClRoHQ0dWb5EJOt3p0xJN45Uc7sAGaoTYzw/5MG7ws2k7flvbmo7rTLpDaK7BydcEM2a78Cr71y3iob/Gpe/v9364MIlR2mZD8mZHoSh15IVMeDd5a3Wt5whdQynYwC66PM5wMX9z40KQF7HF28uNcfm4503ukn2A9EMFRuDOJqPbuy2kUoxNDnGqjE1Wl7lmaAs4N1R4Kd/r6B1Vgw9TY82LCmUySaCwKfXF+M8zi3o2TY7JE+bhM8hHak5nDqgAABdiqOtEWzLLid7a4dVwIIj4vroz34nmmqU2UXOee9Fvy5i4Bx7zffkh3/zlrrh8VZEBl/+phEsle3R7sLmTAZrOvGVFLgP2ztFKyw5h/2wUyTvVODXpfCcVwncjKpzauMxonDfe7QOpV6umenhef6OnfKzWx1z4pU9gUQKp+CXcrJrdTqvsFD0umWwWSWuTS+Dr4zYpw8vLDsD+TzX2xI3VKvBRvmCPyW/LrRsbGB6C0=
-
+    secure: ajn1F6j1MSmc7anHkZSQBVhQhFliS5nufYWxck85UJ4hA0x2PGvJL+Suc8Zuu9+DG069dgMUKHXlcg7qby7VQ/FjdZLqrXiA6/EqAPYQbymN+hvdcXVtl9nXdZBgaJ/8zR+uzOv61XmUQ216zGH3eG7wCAGVmBs9VKWs8wug7NXhw1UBA0SwPRC6rHuBsbYh5NWtClaPAk6YI6QzJQa0ztW2z6jwAJ2hULG92YvtoXgFzl45yzHJYZ5nxafUL5CbLF8MDiTC9LOg/lcREvchgovETm/1Ht9vc3AWkqEY62tk6mv0sJN1yIgLpgzVf9GPiVw2f4GMlyj2orIyQ0q3z0K4+WzFRMo8Kw//OF6a/crwoKIL83nKGpdQeMCNvdKCoaX6ugXSxlBC9pUNbBribh0Vdd/9UBgHAinKLA7keIX1qK2ITJVZ5KWvIlyPL1X03/v4+Pj8EMD5G6Rab+RkeI/98v997lv8NsNfDdQ5X/tHDATh/1tK4m9z+yk2tqMy0y9zA1SPTqQfhNGFOuP9YWAE1PL1IPSKyLD38Rr2gVtjhZLJLxhCo/Lo2FzEtybuBpftEtIjeIesY+0NctladFlKXXF3nyKRZSipRRcu6em/hMQdtstPRlDehTN9LOObIeWfP0roK3FRsaLwX4gz889Z2kOQ75C9iWHhv8qE6s8=
