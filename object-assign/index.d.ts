@@ -11,6 +11,8 @@ declare function objectAssign<T, U, V, W, Q>(target: T, source1: U, source2: V, 
 declare function objectAssign<T, U, V, W, Q, R>(target: T, source1: U, source2: V, source3: W, source4: Q, source5: R): T & U & V & W & Q & R;
 declare function objectAssign(target: any, ...sources: any[]): any;
 
+// Changed: Support es6 import syntax.
+// See: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/12131.
 declare namespace objectAssign {}
 
 export = objectAssign;

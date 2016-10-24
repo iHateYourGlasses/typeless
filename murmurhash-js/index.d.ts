@@ -3,6 +3,8 @@
 // Definitions by: Chi Vinh Le <https://github.com/cvle>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
+// See: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/12189.
+
 type MurmurFunc = (str: string, seed?: number) => number;
 
 declare const murmur: MurmurFunc & {
