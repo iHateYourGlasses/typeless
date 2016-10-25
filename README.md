@@ -26,6 +26,10 @@ And install types like this:
 npm install --save @typeless/jss
 ```
 
+## Available types
+
+See the [types folder](https://github.com/wikiwi/typeless/tree/master/types).
+
 [build status]: https://travis-ci.org/wikiwi/typeless
 
 [build status widget]: https://img.shields.io/travis/wikiwi/typeless/master.svg?style=flat-square
