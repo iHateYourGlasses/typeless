@@ -3,7 +3,7 @@
 // Definitions by: Christopher Brown <https://github.com/chbrown>
 // Definitions: https://github.com/wikiwi/typeless
 
-// See: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/12131
+// See: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/12131.
 
 declare function objectAssign<T, U>(target: T, source: U): T & U;
 declare function objectAssign<T, U, V>(target: T, source1: U, source2: V): T & U & V;

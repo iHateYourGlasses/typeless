@@ -203,7 +203,7 @@ function createReadme(typing: TypingsData) {
 	lines.push("");
 
 	lines.push("# Details");
-	lines.push(`Files were exported from ${typing.sourceRepoURL}/tree/${typing.sourceBranch}/${typing.typingsPackageName}`);
+	lines.push(`Files were exported from ${typing.sourceRepoURL}/tree/${typing.sourceBranch}/types/${typing.typingsPackageName}`);
 
 	lines.push("");
 	lines.push(`Additional Details`);
