@@ -1,4 +1,4 @@
-// Type definitions for JSS v0.5.0
+// Type definitions for jss-preset-default 0.5.0
 // Project: https://github.com/cssinjs/jss-preset-default
 // Definitions by: Chi Vinh Le <https://github.com/cvle>
 // Definitions: https://github.com/wikiwi/typeless
