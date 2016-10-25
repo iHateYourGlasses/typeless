@@ -1,18 +1,14 @@
 {
-  "name": "publish-typings",
-  "version": "0.6.0",
-  "description": "Publish DefinitelyTyped definitions to NPM",
+  "name": "typeless",
+  "version": "0.3.0",
+  "description": "Experimental Typescript Definitions.",
   "main": "index.js",
   "dependencies": {
-    "adal-node": "^0.1.22",
-    "azure-keyvault": "^0.11.0",
-    "azure-storage": "1.2.0",
     "fs-promise": "^0.5.0",
     "fstream": "^1.0.10",
     "longjohn": "^0.2.11",
     "moment": "^2.13.0",
     "node-fetch": "^1.5.3",
-    "nodegit": "^0.16.0",
     "npm": "^3.10.7",
     "npm-registry-client": "^7.1.2",
     "recursive-readdir": "^2.0.0",
@@ -28,39 +24,34 @@
     "@types/source-map-support": "^0.2.27",
     "@types/tar": "^1.0.27",
     "@types/yargs": "^0.0.31",
+    "definition-tester": "^2.0.6-alpha",
     "tslint": "4.0.0-dev.0"
   },
+  "keywords": [
+    "typescript",
+    "typings",
+    "pending"
+  ],
   "scripts": {
     "build": "node node_modules/typescript/lib/tsc.js",
     "clean": "node bin/clean.js",
-    "get-definitely-typed": "node bin/get-definitely-typed.js",
-    "parse": "node bin/parse-definitions.js",
-    "check": "node bin/check-parse-results.js",
-    "calculate-versions": "node bin/calculate-versions.js",
-    "generate": "node bin/generate-packages.js",
-    "validate": "node bin/validate.js",
-    "index": "node bin/create-search-index.js",
+    "test": "cd types && dt",
+    "generate": "node bin/parse-definitions.js && node bin/check-parse-results.js && node bin/calculate-versions.js && node bin/generate-packages.js",
     "publish": "node bin/publish-packages.js",
     "publish-dry": "node bin/publish-packages.js --dry",
-    "upload-blobs": "node bin/upload-blobs.js",
-    "full": "node bin/full.js",
-    "full-dry": "node bin/full.js --dry",
-    "lint": "node node_modules/tslint/bin/tslint src/*.ts src/*/*.ts",
-    "webhook-dry": "node ./bin/webhook.js --dry",
-    "make-server-run": "node bin/make-server-run.js",
-    "make-production-server-run": "node bin/make-server-run.js --remote"
+    "validate": "node bin/validate.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Microsoft/types-publisher.git"
+    "url": "git+https://github.com/wikiwi/typeless.git"
   },
-  "author": "Microsoft",
+  "author": "Chi Vinh Le and contributors (https://github.com/wikiwi/typeless/graphs/contributors)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Microsoft/types-publisher/issues"
+    "url": "https://github.com/wikiwi/typeless/issues"
   },
   "engines": {
     "node": "^6.7.0"
   },
-  "homepage": "https://github.com/Microsoft/types-publisher#readme"
+  "homepage": "https://github.com/wikiwi/typeless#readme"
 }

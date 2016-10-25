@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 6
+install:
+
+before_script:
+  - npm prune
+script:
+  - npm run build
+  - npm run test
+  - npm run generate
+
+after_success:
+  - npm run publish
+

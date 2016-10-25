@@ -152,7 +152,7 @@ export async function getTypingInfo(folderName: string): Promise<TypingParseFail
 	const hasPackageJson = await fsp.exists(path.join(directory, "package.json"));
 	const allFiles = hasPackageJson ? declFiles.concat(["package.json"]) : declFiles;
 
-	const sourceRepoURL = "https://www.github.com/DefinitelyTyped/DefinitelyTyped";
+	const sourceRepoURL = "https://www.github.com/wikiwi/typeless";
 	return {
 		kind: "success",
 		logs: logResult(),

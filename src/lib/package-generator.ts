@@ -117,7 +117,7 @@ async function createPackageJSON(typing: TypingsData, { version, contentHash }: 
 	const peerDependencies = pkg.peerDependencies || {};
 	addInferredDependencies(dependencies, peerDependencies, typing, availableTypes);
 
-	const description = pkg.description || `TypeScript definitions for ${typing.libraryName}`;
+	const description = pkg.description || `Experimental TypeScript definitions for ${typing.libraryName}`;
 
 	// Use the ordering of fields from https://docs.npmjs.com/files/package.json
 	const out = {

@@ -1,15 +1,9 @@
 {
 	"npmRegistry": "https://registry.npmjs.org/",
-	"scopeName": "types",
+	"scopeName": "typeless",
 	"outputPath": "./output",
 	"validateOutputPath": "./validateOutput",
-	"definitelyTypedPath": "../DefinitelyTyped",
-	"sourceRepository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-	"sourceBranch": "types-2.0",
-	"tag": "latest",
-
-	"azureStorageAccount": "typespublisher",
-	"azureContainer": "typespublisher",
-	"azureKeyvault": "https://types-publisher-keys.vault.azure.net",
-	"errorsIssue": "Microsoft/types-publisher/issues/40"
+  "definitelyTypedPath": "./types",
+  "sourceRepository": "https://github.com/wikiwi/typeless.git",
+  "tag": "master"
 }

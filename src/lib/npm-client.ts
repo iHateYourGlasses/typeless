@@ -7,7 +7,6 @@ import { readFile } from "../util/io";
 import { createTgz } from "../util/tgz";
 
 import { settings } from "./common";
-import { getSecret, Secret } from "./secrets";
 
 const registry = settings.npmRegistry;
 assert(registry.endsWith("/"));
@@ -17,9 +16,12 @@ function packageUrl(packageName: string): string {
 }
 
 export default class NpmClient {
-	static async create(): Promise<NpmClient> {
-		const token = await getSecret(Secret.NPM_TOKEN);
-		return new this(new RegClient({}), { token });
+		static async create(): Promise<NpmClient> {
+		const token = process.env.NPM_TOKEN;
+		if (!token) {
+			throw new Error("Must set NPM_TOKEN");
+		}
+		return new this(new RegClient({}), {token});
 	}
 
 	private constructor(private client: RegClient, private auth: RegClient.Credentials) {}

@@ -127,7 +127,7 @@ async function writePackage(packageDirectory: string, packageName: string) {
 		author: "",
 		license: "ISC",
 		repository: "https://github.com/Microsoft/types-publisher",
-		dependencies: { [`@types/${packageName}`]: settings.tag }
+		dependencies: { [`@typeless/${packageName}`]: settings.tag }
 	});
 
 	// Write tsconfig.json
