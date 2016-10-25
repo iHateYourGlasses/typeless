@@ -1,10 +1,30 @@
 # typeless
 
+[![Build Status Widget]][build status]
+
 Experimental typescript definitions published under the `@typeless` scope
 which will eventually be merged to [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-[![Build Status Widget]][build status]
+This is a fork of [types-publisher](https://github.com/Microsoft/types-publisher).
 
+## Usage
+
+To use these type definitions include the following in your `tsconfig.json`:
+
+```json
+"baseUrl": "./",
+"paths": {
+  "*": [
+    "./node_modules/@typeless/*"
+  ]
+}
+```
+
+And install types like this:
+
+```bash
+npm install --save @typeless/jss
+```
 
 [build status]: https://travis-ci.org/wikiwi/typeless
 
