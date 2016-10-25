@@ -4,5 +4,6 @@
 	"outputPath": "./output",
 	"validateOutputPath": "./validateOutput",
   "definitelyTypedPath": "./types",
-  "sourceRepository": "https://github.com/wikiwi/typeless.git"
+  "sourceRepository": "https://github.com/wikiwi/typeless.git",
+  "sourceBranch": "master"
 }
