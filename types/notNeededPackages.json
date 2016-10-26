@@ -1,3 +1,9 @@
 {
-    "packages": []
+    "packages": [
+        {
+            "libraryName": "object-assign",
+            "typingsPackageName": "object-assign",
+            "sourceRepoURL": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/types-2.0/object-assign"
+        }
+    ]
 }
