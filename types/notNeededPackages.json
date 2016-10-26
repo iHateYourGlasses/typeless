@@ -4,6 +4,11 @@
             "libraryName": "object-assign",
             "typingsPackageName": "object-assign",
             "sourceRepoURL": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/types-2.0/object-assign"
+        },
+        {
+            "libraryName": "murmurhash-js",
+            "typingsPackageName": "murmurhash-js",
+            "sourceRepoURL": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/types-2.0/murmurhash-js"
         }
     ]
 }
