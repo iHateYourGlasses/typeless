@@ -175,7 +175,7 @@ function createNotNeededPackageJSON({libraryName, typingsPackageName, sourceRepo
 		name: fullPackageName(typingsPackageName),
 		version: versionString(version),
 		typings: null,
-		description: `Stub TypeScript definitions entry for ${libraryName}, which provides its own types definitions`,
+		description: `Stub package of deprecated experimental types definitions for ${libraryName}.`,
 		main: "",
 		scripts: {},
 		author: "",
@@ -183,7 +183,7 @@ function createNotNeededPackageJSON({libraryName, typingsPackageName, sourceRepo
 		license: "MIT",
 		// No `typings`, that's provided by the dependency.
 		dependencies: {
-			[typingsPackageName]: "*"
+			[`@types/${libraryName}`]: "*"
 		}
 	}, undefined, 4);
 }

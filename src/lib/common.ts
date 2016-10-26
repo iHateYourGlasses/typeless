@@ -204,10 +204,10 @@ export function fullPackageName(typingsPackageName: string): string {
 	return `@${settings.scopeName}/${typingsPackageName.toLowerCase()}`;
 }
 
-export function notNeededReadme({libraryName, typingsPackageName, sourceRepoURL}: NotNeededPackage, useNewline: boolean = true): string {
+export function notNeededReadme({libraryName, typingsPackageName}: NotNeededPackage, useNewline: boolean = true): string {
 	const lines = [
-		`This is a stub types definition for ${libraryName} (${sourceRepoURL}).`,
-		`${libraryName} provides its own type definitions, so you don't need ${fullPackageName(typingsPackageName)} installed!`
+		`This is a stub package for the experimental types definitions of ${libraryName}.`,
+        `Use @types/${typingsPackageName} instead.`,
 	];
 	return lines.join(useNewline ? "\n" : " ");
 }
