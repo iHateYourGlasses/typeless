@@ -9,6 +9,11 @@
             "libraryName": "murmurhash-js",
             "typingsPackageName": "murmurhash-js",
             "sourceRepoURL": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/types-2.0/murmurhash-js"
+        },
+        {
+            "libraryName": "deep-extend",
+            "typingsPackageName": "deep-extend",
+            "sourceRepoURL": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/types-2.0/deep-extend"
         }
     ]
 }
